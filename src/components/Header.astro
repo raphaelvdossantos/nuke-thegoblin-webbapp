@@ -1,0 +1,55 @@
+---
+import logo from "../assets/Logo.svg";
+import discordIcon from "../assets/DiscordIcon.svg";
+---
+
+<nav>
+  <img src={logo} alt="Nuke, the Goblin bot logo" />
+  <ul>
+    <li>Docs</li>
+    <li>Commands</li>
+    <li>
+      <a class="discord-login" href="#"
+        ><img src={discordIcon} alt="Discord logo" /> Login</a
+      >
+    </li>
+  </ul>
+</nav>
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+
+  .discord-login {
+    background-color: #7289da;
+    padding: 5px 20px;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    border-radius: 40px;
+  }
+
+  li:not(:last-child) {
+    font-family: Satisfy;
+    font-size: xx-large;
+  }
+
+  li:last-child {
+    font-weight: 600;
+    font-size: x-large;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+</style>
