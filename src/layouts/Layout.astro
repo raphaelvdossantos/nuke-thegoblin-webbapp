@@ -25,25 +25,30 @@ const { title } = Astro.props;
   </head>
   <body>
     <slot />
+    <div class="circle"></div>
   </body>
 </html>
 <style is:global>
-  :root {
-    --accent: 136, 58, 234;
-    --accent-light: 224, 204, 250;
-    --accent-dark: 49, 10, 101;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      rgb(var(--accent-light)) 30%,
-      white 60%
-    );
-  }
   html {
     font-family: Inter, sans-serif;
     background: #e2e3de;
     background-size: 224px;
   }
+
+  .circle {
+    border: 3px #ad7941 solid;
+    border-radius: 80rem;
+
+    height: 80rem;
+    width: 80rem;
+
+    position: absolute;
+    z-index: -1;
+
+    top: 425px;
+    right: -20rem;
+  }
+
   code {
     font-family: Satisfy, Inter, Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
