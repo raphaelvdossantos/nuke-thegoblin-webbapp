@@ -1,0 +1,42 @@
+---
+interface Props {
+  imgSrc: string;
+  header: string;
+  description: string;
+}
+
+const { imgSrc, header, description } = Astro.props;
+---
+
+<div class="feature-card">
+  <img src={imgSrc} />
+  <h1 class="header">{header}</h1>
+  <p class="description">{description}</p>
+</div>
+
+<style>
+  .feature-card {
+    max-width: 500px;
+
+    display: grid;
+    grid-template-areas: "img h1" "img p";
+    column-gap: 15px;
+
+    color: #e2e3de;
+  }
+
+  img {
+    grid-area: img;
+    align-self: center;
+    width: 7rem;
+  }
+
+  h1 {
+    grid-area: h1;
+    font-family: Satisfy;
+  }
+
+  p {
+    grid-area: p;
+  }
+</style>

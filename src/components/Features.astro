@@ -1,0 +1,82 @@
+---
+import spells from "../assets/spellIcon.svg";
+import fumble from "../assets/fumbleIcon.svg";
+import dice from "../assets/diceIcon.svg";
+import phrases from "../assets/phrasesIcon.svg";
+
+import Feature from "./Feature.astro";
+---
+
+<div class="container">
+  <h1>Features</h1>
+  <Feature
+    class:list={"spells"}
+    imgSrc={spells}
+    header="Spells"
+    description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
+  />
+  <Feature
+    class:list={"fumble"}
+    imgSrc={fumble}
+    header="Fumbles"
+    description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
+  />
+  <Feature
+    class:list={"phrases"}
+    imgSrc={phrases}
+    header="Phrases"
+    description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
+  />
+  <Feature
+    class:list={"dice"}
+    imgSrc={dice}
+    header="Dice Rolling"
+    description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
+  />
+</div>
+
+<style>
+  .container {
+    height: fit-content;
+
+    display: grid;
+    grid-template-areas:
+      "h1 h1"
+      "spells fumble"
+      "dice phrases";
+
+    justify-content: space-evenly;
+
+    box-shadow: #d0d4cf -25px 25px;
+    background-color: #0a9e85;
+
+    border-radius: 25px;
+
+    width: 90%;
+    margin: auto;
+  }
+
+  h1 {
+    font-family: Satisfy;
+    grid-area: h1;
+    justify-self: center;
+
+    color: #e2e3de;
+  }
+
+  .spells {
+    grid-area: spells;
+  }
+
+  .fumble {
+    grid-area: fumble;
+  }
+
+  .dice {
+    grid-area: dice;
+  }
+
+  .phrases {
+    grid-area: phrases;
+  }
+</style>
