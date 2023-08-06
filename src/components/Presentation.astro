@@ -3,43 +3,18 @@ import coins from "../assets/coins.svg";
 import goblin from "../assets/goblin.png";
 ---
 
-<div class="container">
+<div class="flex my-36 mx-0">
   <div>
-    <h1>Your party friend for <br /> the craziest adventures!</h1>
-    <p>
+    <h1 class="font-satisfy text-6xl ml-20 mb-0">
+      Your party friend for <br /> the craziest adventures!
+    </h1>
+    <p class="font-satisfy text-2xl m-0 mt-4 ml-20 w-3/4">
       Once a dreadful plunderer, Nuke was recruited by the great Wizard Sirius
       to help the not-so wise adventurers in their not-so-well-chosen yet
       incredible adventures. He has mastered the skills of being useful
       providing your party with invaluable knowledge a simple command away.
     </p>
-    <img src={coins} class="coins" />
+    <img src={coins} class="w-44" />
   </div>
   <img src={goblin} />
 </div>
-<style>
-  .container {
-    display: flex;
-    margin: 9rem 0;
-  }
-
-  h1 {
-    font-family: Satisfy;
-    font-size: 3.5rem;
-    margin-left: 5rem;
-    margin-bottom: 0;
-  }
-
-  p {
-    font-family: Satisfy;
-    font-size: x-large;
-
-    margin: 1rem 0 0 5rem;
-
-    width: 70%;
-  }
-
-  .coins {
-    pointer-events: none;
-    width: 11rem;
-  }
-</style>

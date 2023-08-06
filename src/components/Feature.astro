@@ -8,37 +8,10 @@ interface Props {
 const { imgSrc, header, description } = Astro.props;
 ---
 
-<div class="feature-card">
-  <img src={imgSrc} />
-  <h1 class="header">{header}</h1>
-  <p class="description">{description}</p>
+<div class="feature-card text-gray-ish flex gap-4 max-w-lg">
+  <img class="pt-5 w-28 self-start" src={imgSrc} />
+  <div>
+    <h1 class="header font-satisfy text-3xl">{header}</h1>
+    <p class="description">{description}</p>
+  </div>
 </div>
-
-<style>
-  .feature-card {
-    max-width: 500px;
-
-    display: grid;
-    grid-template-areas: "img h1" "img p";
-    column-gap: 15px;
-
-    color: #e2e3de;
-  }
-
-  img {
-    grid-area: img;
-    align-self: flex-start;
-    width: 7rem;
-
-    padding-top: 1.3rem;
-  }
-
-  h1 {
-    grid-area: h1;
-    font-family: Satisfy;
-  }
-
-  p {
-    grid-area: p;
-  }
-</style>

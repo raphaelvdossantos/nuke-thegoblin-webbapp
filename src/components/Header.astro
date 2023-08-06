@@ -3,59 +3,25 @@ import logo from "../assets/Logo.svg";
 import discordIcon from "../assets/DiscordIcon.svg";
 ---
 
-<nav>
-  <img src={logo} alt="Nuke, the Goblin bot logo" />
-  <ul>
-    <li>Docs</li>
-    <li>Commands</li>
-    <li>About</li>
-    <li>
-      <a class="discord-login" href="#"
-        ><img src={discordIcon} alt="Discord logo" /> Login</a
+<nav class="flex justify-between my-4 mx-0">
+  <a href="/">
+    <img src={logo} alt="Nuke, the Goblin bot logo" />
+  </a>
+  <ul class="flex list-none gap-6 items-center">
+    <li class="text-goblin-green font-satisfy text-3xl align-middle">
+      <a href="#">Docs</a>
+    </li>
+    <li class="text-goblin-green font-satisfy text-3xl">
+      <a href="#">Commands</a>
+    </li>
+    <li class="text-goblin-green font-satisfy text-3xl">
+      <a href="#">About</a>
+    </li>
+    <li class="font-semibold text-2xl">
+      <a
+        class="discord-login text-white flex gap-3 align-middle rounded-full bg-discord-blue py-1 px-5"
+        href="#"><img src={discordIcon} alt="Discord logo" /> Login</a
       >
     </li>
   </ul>
 </nav>
-<style>
-  nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 0;
-  }
-
-  ul {
-    display: flex;
-    list-style: none;
-    gap: 2.5rem;
-  }
-
-  .discord-login {
-    background-color: #7289da;
-    padding: 5px 20px;
-
-    display: flex;
-    gap: 10px;
-    align-items: center;
-
-    border-radius: 40px;
-  }
-
-  li {
-    color: #00dcc3;
-  }
-
-  li:not(:last-child) {
-    font-family: Satisfy;
-    font-size: xx-large;
-  }
-
-  li:last-child {
-    font-weight: 600;
-    font-size: x-large;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-</style>

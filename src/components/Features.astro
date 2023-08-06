@@ -7,8 +7,14 @@ import phrases from "../assets/phrasesIcon.svg";
 import Feature from "./Feature.astro";
 ---
 
-<div class="container">
-  <h1>Features</h1>
+<div
+  class="container justify-evenly bg-goblin-green py-12 px-0 m-auto grid grid-cols-2 grid-rows-2 gap-y-10 h-fit rounded-[50px] justify-items-center"
+>
+  <h1
+    class="font-satisfy text-5xl m-0 text-gray-ish row-span-1 col-span-2 self-center"
+  >
+    Features
+  </h1>
   <Feature
     class:list={"spells"}
     imgSrc={spells}
@@ -16,19 +22,19 @@ import Feature from "./Feature.astro";
     description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
   />
   <Feature
-    class:list={"fumble"}
+    class:list={"fumble row-span-1 col-span-1"}
     imgSrc={fumble}
     header="Fumbles"
     description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
   />
   <Feature
-    class:list={"phrases"}
+    class:list={"phrases row-span-1 col-span-1"}
     imgSrc={phrases}
     header="Phrases"
     description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
   />
   <Feature
-    class:list={"dice"}
+    class:list={"dice row-span-1 col-span-1"}
     imgSrc={dice}
     header="Dice Rolling"
     description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
@@ -37,50 +43,7 @@ import Feature from "./Feature.astro";
 
 <style>
   .container {
-    height: fit-content;
-
-    display: grid;
-    grid-template-areas:
-      "h1 h1"
-      "spells fumble"
-      "dice phrases";
-
-    justify-content: space-evenly;
-
     box-shadow: #d0d4cf -35px 35px;
-    background-color: #0a9e85;
-
-    border-radius: 50px;
-
     width: 90%;
-    margin: auto;
-    padding: 3rem 0;
-  }
-
-  h1 {
-    font-family: Satisfy;
-    font-size: 3rem;
-
-    margin: 0;
-    grid-area: h1;
-    justify-self: center;
-
-    color: #e2e3de;
-  }
-
-  .spells {
-    grid-area: spells;
-  }
-
-  .fumble {
-    grid-area: fumble;
-  }
-
-  .dice {
-    grid-area: dice;
-  }
-
-  .phrases {
-    grid-area: phrases;
   }
 </style>
