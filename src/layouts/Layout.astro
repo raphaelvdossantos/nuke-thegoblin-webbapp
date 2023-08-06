@@ -23,19 +23,12 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="bg-gray-ish font-sans overflow-x-hidden">
     <slot />
     <div class="circle"></div>
   </body>
 </html>
 <style is:global>
-  html {
-    font-family: Inter, sans-serif;
-    background: #e2e3de;
-    background-size: 224px;
-    overflow-x: hidden;
-  }
-
   .circle {
     border: 3px #ad7941 solid;
     border-radius: 80rem;
@@ -48,10 +41,5 @@ const { title } = Astro.props;
 
     top: 425px;
     right: -20rem;
-  }
-
-  code {
-    font-family: Satisfy, Inter, Menlo, Monaco, Lucida Console, Liberation Mono,
-      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
 </style>
