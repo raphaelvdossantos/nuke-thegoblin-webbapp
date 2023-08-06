@@ -2,13 +2,13 @@
 import spells from "../assets/spellIcon.svg";
 import fumble from "../assets/fumbleIcon.svg";
 import dice from "../assets/diceIcon.svg";
-import phrases from "../assets/phrasesIcon.svg";
+import characterIcon from "../assets/characterIcon.svg";
 
 import Feature from "./Feature.astro";
 ---
 
 <div
-  class="justify-evenly bg-goblin-green pb-32 px-0 m-auto grid grid-cols-2 grid-rows-3 gap-y-10 h-fit rounded-[50px] justify-items-center shadow-features"
+  class="justify-evenly bg-goblin-green pb-32 px-0 m-auto grid grid-cols-2 grid-rows-3 gap-y-10 h-fit rounded-[50px] justify-items-center shadow-features mb-32"
 >
   <h1
     class="font-satisfy text-5xl m-0 text-gray-ish row-span-1 col-span-2 self-end"
@@ -18,7 +18,7 @@ import Feature from "./Feature.astro";
   <Feature
     class:list={"row-span-1 col-span-1"}
     imgSrc={spells}
-    header="Spells"
+    header="Rules, Spells & others"
     description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
   />
   <Feature
@@ -29,14 +29,15 @@ import Feature from "./Feature.astro";
   />
   <Feature
     class:list={"row-span-1 col-span-1"}
-    imgSrc={phrases}
-    header="Phrases"
+    imgSrc={dice}
+    header="Dice Rolling"
     description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
   />
   <Feature
     class:list={"row-span-1 col-span-1"}
-    imgSrc={dice}
-    header="Dice Rolling"
+    imgSrc={characterIcon}
+    inDevelopment={true}
+    header="Random Character Creation"
     description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
   />
 </div>

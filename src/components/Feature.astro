@@ -3,15 +3,21 @@ interface Props {
   imgSrc: string;
   header: string;
   description: string;
+  inDevelopment?: boolean;
 }
 
-const { imgSrc, header, description } = Astro.props;
+const { imgSrc, header, description, inDevelopment } = Astro.props;
+
+import Badge from "./Badge.astro";
 ---
 
 <div class="text-gray-ish flex gap-4 max-w-lg">
   <img class="pt-5 w-28 self-start" src={imgSrc} />
   <div>
-    <h1 class="header font-satisfy text-3xl">{header}</h1>
+    <h1 class=`header font-satisfy text-3xl ${!inDevelopment && "mb-2"}`>
+      {header}
+    </h1>
+    {inDevelopment && <Badge text="Coming soon" />}
     <p class="description">{description}</p>
   </div>
 </div>
