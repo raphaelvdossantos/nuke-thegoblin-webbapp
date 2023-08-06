@@ -17,6 +17,9 @@ module.exports = {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
         satisfy: ["'Satisfy'"],
       },
+      boxShadow: {
+        features: "-35px 35px rgba(208, 212, 207, 1)",
+      },
     },
   },
   plugins: [],
