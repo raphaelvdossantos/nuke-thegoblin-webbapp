@@ -1,43 +1,43 @@
 ---
-import spells from "../assets/spellIcon.svg";
-import fumble from "../assets/fumbleIcon.svg";
-import dice from "../assets/diceIcon.svg";
-import characterIcon from "../assets/characterIcon.svg";
+import spells from '../assets/spellIcon.svg';
+import fumble from '../assets/fumbleIcon.svg';
+import dice from '../assets/diceIcon.svg';
+import characterIcon from '../assets/characterIcon.svg';
 
-import Feature from "./Feature.astro";
+import Feature from './Feature.astro';
 ---
 
 <div
-  class="justify-evenly bg-goblin-green pb-32 px-0 m-auto grid grid-cols-2 grid-rows-3 gap-y-10 h-fit rounded-[50px] justify-items-center shadow-features mb-32"
+  class='justify-evenly bg-goblin-green pb-32 px-0 m-auto grid grid-cols-2 grid-rows-3 gap-y-10 h-fit rounded-[50px] justify-items-center shadow-features mb-32'
 >
   <h1
-    class="font-satisfy text-5xl m-0 text-gray-ish row-span-1 col-span-2 self-end"
+    class='font-satisfy text-5xl m-0 text-gray-ish row-span-1 col-span-2 self-end'
   >
     Features
   </h1>
   <Feature
-    class:list={"row-span-1 col-span-1"}
+    class:list={'row-span-1 col-span-1'}
     imgSrc={spells}
-    header="Rules, Spells & others"
-    description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
+    header='Rules, Spells & others'
+    description='Do you need quick and easy access to all the rules & spells from the book? Freet not, for Nuke is here for you. With a simple command, you get all the information you need displayed so you can focus on what is important: Landing those crits!'
   />
   <Feature
-    class:list={"row-span-1 col-span-1"}
+    class:list={'row-span-1 col-span-1'}
     imgSrc={fumble}
-    header="Fumbles"
-    description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
+    header='Fumbles'
+    description='Want to add some spice to your table? How about some random fumbles to make things interesting. Nuke has tricks up on his sleeves to help you sprinkle some salt on the wounds of your enemies... or players, whichever is the luckiest. Or rather UNluckiest!'
   />
   <Feature
-    class:list={"row-span-1 col-span-1"}
+    class:list={'row-span-1 col-span-1'}
     imgSrc={dice}
-    header="Dice Rolling"
-    description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
+    header='Dice Rolling'
+    description="You know the drill, every table needs a dice roller. But every now and then a dice gets 'The curse'. You start seeing the bad side of your opponents and all of a sudden you have a TPK coming on your way. So why not use a more Unbiased dice? Just type the command and Nuke will roll the die for you!"
   />
   <Feature
-    class:list={"row-span-1 col-span-1"}
+    class:list={'row-span-1 col-span-1'}
     imgSrc={characterIcon}
     inDevelopment={true}
-    header="Random Character Creation"
-    description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quibusdam exercitationem ex obcaecati similique doloremque illum quo corporis nam, blanditiis eos magni aliquam quisquam, rerum non itaque atque! Recusandae, ipsam?"
+    header='Random Character Creation'
+    description="This is the fun part, creating a character. What? You don't have the time??? Okay, okay. Here, let Nuke help you. With a simple command he can build quickly build you a nice character... And fun too, if you tare to take your chances with the Randomizer!'"
   />
 </div>
