@@ -1,7 +1,34 @@
-<div class="flex flex-col items-center justify-center">
-  <h1>The Mad Wizard</h1>
-  <ul class="flex flex-col">
-    <a href="#">LinkedIn</a>
-    <a href="#">Github</a>
-  </ul>
+---
+import ProfileImage from './ProfileImage.astro';
+import linkedinIcon from '../assets/linkedinIcon.svg';
+import githubIcon from '../assets/githubIcon.svg';
+---
+
+<div
+  class='flex flex-col gap-12 items-center justify-center bg-goblin-green py-28 px-12 mt-48 rounded-[50px] shadow-features'
+>
+  <ProfileImage />
+  <h1 class='font-satisfy text-8xl text-white'>The Mad Wizard</h1>
+  <p class='text-xl text-white text-center w-4/5'>
+    Nuke, the Goblin bot was created in 2020. His original name was Todd and he
+    was created as an excuse for the Mad Wizard to practice python, the
+    programming language, while doing something somewhat useful. A project that
+    could have some purpose.
+    <br /><br />
+    But after playing in a table of DnD 5e that started in early 2023 as - you guessed
+    - a wizard tha befriended a goblin named Nuke, the Wizard decided to get back
+    to the bot (that after a few lines of code was left untouched) and not only finish
+    it but give a greater purpose, overhauling the initial simple idea - the bot
+    was meant to simply roll dices and some fumbles.
+  </p>
+  <div class='flex gap-4 text-white justify-end items-baseline w-4/5 pr-4'>
+    <h1 class='text-xl'>Contact:</h1>
+    <a
+      href='https://github.com/raphaelvdossantos'
+      class='flex gap-2 align-middle'><img src={linkedinIcon} class='w-6' /></a
+    >
+    <a href='https://www.linkedin.com/in/raphaelvsantos/' class='flex gap-2'
+      ><img src={githubIcon} class='w-6' /></a
+    >
+  </div>
 </div>
